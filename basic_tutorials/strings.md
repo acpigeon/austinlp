@@ -73,7 +73,23 @@ If you want the last letter, Python has a shortcut for that too, you can use -1.
 
 'hello'[-1] gives you 'o', just like if you said 4.
 
-	# We could go on and talk about ranges, etc.
+
+Getting Whole Sections of a String
+----------------------------------
+
+In addition to picking a certain letter out of a string, we can get a whole section of letters:
+
+	>>> 'hello'[0:3]
+	'hel'
+
+'hello'[0:3] will give me [0] all the way upto, but NOT INCLUDING [3] of the string 'hello' -- so 'hel'.  The colon ":" lets me choose a whole range.  A couple more examples:
+
+	>>> 'forthright'[5:10]
+	'right'
+	>>> 'bathtub'[4:]
+	'tub'
+
+Notice that for the 'bathtub' example I left it blank after the colon ":".  That means go all the way to the end of the string.  So starting from 4 (0='b',1='a',2='t',3='h',4='t'), and going from there to the end, gave 'tub'.
 
 
 Printing out a String to the Screen
