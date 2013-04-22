@@ -1,0 +1,4 @@
+http://ivory.idyll.org/blog/not-sucking.html
+http://www.codinghorror.com/blog/2006/05/code-smells.html
+http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
+http://pyvideo.org/video/880/stop-writing-classes
