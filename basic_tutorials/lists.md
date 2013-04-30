@@ -1,0 +1,120 @@
+Lists
+=====
+
+A List is a very useful data structure.  It allows you to hold multiple values / variables together in an organized, ordered way, without giving each of them a separate name.  For example, instead of writing:
+
+	>>> even_number_1 = 2
+	>>> even_number_2 = 4
+	>>> even_number_3 = 6
+	>>> even_number_4 = 8
+
+(Which could get very tedious!)  I can use a List and write:
+
+	>>> even_numbers = [2,4,6,8]
+
+
+Creating a List
+---------------
+
+You can create a List using square brackets.  If you don't put anything in the brackets, it's an empty List.  Don't worry, you can always add things to it later.
+
+	>>> mylist = []
+
+If you want to create a non-empty List, just put any values you want inside the square brackets, separated by commas:
+
+	>>> mylist = [1,1,2,3,5,8]
+
+You can put any kind of value from Python inside your Lists -- numbers, strings -- even other Lists and Dictionaries.
+
+	>>> otherlist = ['you','can','also','have','strings']
+	>>> mixedlist = ['and',1,'you','can','mix']
+	>>> list_in_list = ['lists','can','go','in','lists',['see?']]
+
+
+Using the range() function to get a List of numbers
+---------------------------------------------------
+
+Python makes it easy to get a List of numbers from say 0-100 without having to type it out by hand or write a special loop to do it.  The range() function does this:
+
+	>>> range(100)
+	[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+
+Notice that it went UP TO 100 but NOT INCLUDING 100!  This is important to understand.  Since it starts at 0, 0-99 is actually 100 numbers.  (0-100 would be 101.)
+
+If you give range() 2 numbers instead of 1, you get a List from A to B instead of just starting at 0:
+
+	>>> range(5,10)
+	[5, 6, 7, 8, 9]
+
+
+Getting an Item in a List
+-------------------------
+
+Just like we used square brackets to define a list, we use them to get an Item within a list.  Put the number of which Item you want inside the square brackets.  Remember to start counting at 0, not 1!
+
+	>>> L = ['this','that','the other']
+	>>> L[0]
+	'this'
+	>>> L[1]
+	'that'
+	>>> L[2]
+	'the other'
+
+
+
+Adding Items to a List
+----------------------
+
+You can add an item to the end of a list using .append():
+
+	>>> L = ['one','two']
+	>>> L.append('three')
+	>>> L
+	['one', 'two', 'three']
+
+Or you can insert something at a certain place within the list using .insert().  When you use insert, you have to tell it 2 things: the position where you want to insert (as a number), and then the item that you want to insert.  Inserting at position 0 means at the beginning of the list:
+
+	>>> L.insert(0, 'before')
+	>>> L
+	['before', 'one', 'two', 'three']
+
+Inserting at position 1 will go in between the 1st 2 items, etc.:
+
+	>>> L.insert(1, 'between')
+	>>> L
+	['before', 'between', 'one', 'two', 'three']
+
+
+Getting a Subrange within a List
+--------------------------------
+
+Let's say we have this List:
+
+	>>> L = [1,'fish',2,'fish','red','fish','blue','fish']
+
+We can select just a part of this list, a "range", by using square brackets with 2 numbers and a colon between.  The whole List, all 8 elements, would be like this:
+
+	>>> L[0:8]
+	[1,'fish',2,'fish','red','fish','blue','fish']
+
+But you could get just the first 6 like this:
+
+	>>> L[0:6]
+	[1,'fish',2,'fish','red','fish']
+
+Or just the middle 4 like this:
+
+	>>> L[2:6]
+	[2,'fish','red','fish']
+
+Again, notice how whatever number you put second, for example, 6 -- it goes UP TO L[6] but NOT INCLUDING L[6].  I thought that was really weird at first but after programming for a while it ends up making a lot of sense, trust me!  (It's related to the fact that counting starts at 0.)
+
+
+Lists vs. Dictionaries
+----------------------
+
+There's another type of data structure called a Dictionary which also gives us a way to group multiple values and variables together into a single variable.  We'll go into the details of how Dictionaries work, but for now let's talk about the key differences between Lists and Dictionaries:
+
+* __Ordering__ -- The items in a List are kept in the exact order you put them in.  Dictionaries do not let you control what order your items go in.
+* __No Names for each Item__ -- The overall List can have a name of course, but each individual Item inside it doesn't have one.  So if you had a list called ShoppingList, the separate items are just ShoppingList[0], ShoppingList[1], etc.  In a Dictionary, you give a name to each Item within the Dictionary.
+
