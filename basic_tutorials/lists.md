@@ -36,12 +36,12 @@ You can put any kind of value from Python inside your Lists -- numbers, strings 
 Using the range() function to get a List of numbers
 ---------------------------------------------------
 
-Python makes it easy to get a List of numbers from say 0-100 without having to type it out by hand or write a special loop to do it.  The range() function does this:
+Python makes it easy to get a List of numbers from say 0-10 without having to type it out by hand or write a special loop to do it.  The range() function does this:
 
-	>>> range(100)
-	[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+	>>> range(10)
+	[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-Notice that it went UP TO 100 but NOT INCLUDING 100!  This is important to understand.  Since it starts at 0, 0-99 is actually 100 numbers.  (0-100 would be 101.)
+Notice that it went UP TO 10 but NOT INCLUDING 10!  This is important to understand.  Since it starts at 0, 0-9 is actually 10 numbers.  (0-10 would be 11.)
 
 If you give range() 2 numbers instead of 1, you get a List from A to B instead of just starting at 0:
 
