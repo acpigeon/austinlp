@@ -12,6 +12,8 @@ A List is a very useful data structure.  It allows you to hold multiple values /
 
 	>>> even_numbers = [2,4,6,8]
 
+Note:  Lots of other programming languages have something almost exactly like a List, but in most languages it is called an Array.  Even though there's nothing in Python formally called an "Array", you may still hear people refer to Lists as Arrays.
+
 
 Creating a List
 ---------------
