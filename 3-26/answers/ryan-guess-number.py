@@ -11,7 +11,7 @@ def ask_yes_no_question(question):
         elif what_u_say.lower() in ['n','no','naw','nuh uh','nope']:
             return False
         else:
-            print "Didn't quite get that!  Answer y or Y or n or N, please!"
+            print "Didn't quite get that!  Answer yes or no please!"
 
 def ask_for_number(question):
     '''ask for a number and keep asking until they type a number'''
