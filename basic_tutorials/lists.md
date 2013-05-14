@@ -62,6 +62,14 @@ Just like we used square brackets to define a list, we use them to get an Item w
 	>>> L[2]
 	'the other'
 
+We can also use negative indexing to grab items starting at the end of our list.
+
+	>>> L = ['this','that','the other']
+	>>> L[-1]
+	'the other'
+	>>> L[-2]
+	'that'
+
 
 
 Adding Items to a List
