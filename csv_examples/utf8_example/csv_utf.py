@@ -1,12 +1,10 @@
-# The commented lines allow us to handle input with accented or non-Western characters.
+# The Unicode lines allow us to handle input with accented or non-Western characters.
 # Always follow the principle of the Uniocde sandwich: decode all inputs upon input, encode all outputs upon output.
 # An excellent resource for any of problems in this area: http://nedbatchelder.com/text/unipain.html
 
 import csv
 
-
 word, definition = [], []
-
 
 with open('vocab.csv', 'rU') as file:
     csv_object = csv.reader(file, delimiter=',', quotechar='"')
