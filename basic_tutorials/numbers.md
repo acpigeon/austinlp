@@ -22,7 +22,7 @@ Multiplication is done with the * symbol.
 	>>>> 2*4
 	8
 
-Division is done with the / symbol. The difference between integers and floating point numbers is significant in python. Division of two integers returns the floor. Floating point is simple as well.
+Division is done with the / symbol. The difference between integers and floating point numbers is significant in python. Division of two integers returns the floor (it will round down to the nearest integer). Floating point is simple as well.
 
 	# Divide 8 by 2
 	>>>> 8/2
