@@ -128,3 +128,7 @@ There's another type of data structure called a Dictionary which also gives us a
 * __Ordering__ -- The items in a List are kept in the exact order you put them in.  Dictionaries do not let you control what order your items go in.
 * __No Names for each Item__ -- The overall List can have a name of course, but each individual Item inside it doesn't have one.  So if you had a list called ShoppingList, the separate items are just ShoppingList[0], ShoppingList[1], etc.  In a Dictionary, you give a name to each Item within the Dictionary.
 
+<form method="POST">
+	<div><label>Do you have any questions?</label> <input name="question" /></div>
+	<div><input type="submit" /></div>
+</form>
