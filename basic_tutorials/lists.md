@@ -62,7 +62,7 @@ Just like we used square brackets to define a list, we use them to get an Item w
 	>>> L[2]
 	'the other'
 
-We can also use negative indexing to grab items starting at the end of our list.
+We can also use negative indexing to grab items starting at the end of our list.  -1 gives you the last item in the list, -2 the 2nd-to-last, and so on:
 
 	>>> L = ['this','that','the other']
 	>>> L[-1]
