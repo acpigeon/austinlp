@@ -34,3 +34,7 @@ IPython notebook quickstart
 The command should launch a new tab in your default browser, with a list of
 the available notebooks.
 
+Share comments/links about python/programming with each other here
+------------------------------------------------------------------
+
+#. https://github.com/dottie333/dorothybox - Dorothy Sanchez's repository with her answers to problems, etc.
